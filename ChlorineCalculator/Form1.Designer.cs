@@ -45,7 +45,7 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label1VolumeTotal = new System.Windows.Forms.Label();
             this.textBoxVolumeTotal = new System.Windows.Forms.TextBox();
-            this.buttonCalculateChlorine = new System.Windows.Forms.Button();
+            this.buttonCalculateChlorineCost = new System.Windows.Forms.Button();
             this.buttonClearAllFields = new System.Windows.Forms.Button();
             this.buttonCloseApp = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -203,16 +203,16 @@
             this.textBoxVolumeTotal.Size = new System.Drawing.Size(100, 20);
             this.textBoxVolumeTotal.TabIndex = 16;
             // 
-            // buttonCalculateChlorine
+            // buttonCalculateChlorineCost
             // 
-            this.buttonCalculateChlorine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.buttonCalculateChlorine.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCalculateChlorine.Location = new System.Drawing.Point(37, 281);
-            this.buttonCalculateChlorine.Name = "buttonCalculateChlorine";
-            this.buttonCalculateChlorine.Size = new System.Drawing.Size(217, 38);
-            this.buttonCalculateChlorine.TabIndex = 17;
-            this.buttonCalculateChlorine.Text = "CALCULATE CHLORINE";
-            this.buttonCalculateChlorine.UseVisualStyleBackColor = false;
+            this.buttonCalculateChlorineCost.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.buttonCalculateChlorineCost.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCalculateChlorineCost.Location = new System.Drawing.Point(37, 281);
+            this.buttonCalculateChlorineCost.Name = "buttonCalculateChlorineCost";
+            this.buttonCalculateChlorineCost.Size = new System.Drawing.Size(217, 38);
+            this.buttonCalculateChlorineCost.TabIndex = 17;
+            this.buttonCalculateChlorineCost.Text = "CHLORINE COSTS";
+            this.buttonCalculateChlorineCost.UseVisualStyleBackColor = false;
             // 
             // buttonClearAllFields
             // 
@@ -244,7 +244,7 @@
             this.ClientSize = new System.Drawing.Size(800, 336);
             this.Controls.Add(this.buttonCloseApp);
             this.Controls.Add(this.buttonClearAllFields);
-            this.Controls.Add(this.buttonCalculateChlorine);
+            this.Controls.Add(this.buttonCalculateChlorineCost);
             this.Controls.Add(this.textBoxVolumeTotal);
             this.Controls.Add(this.label1VolumeTotal);
             this.Controls.Add(this.textBox5);
@@ -288,7 +288,7 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label1VolumeTotal;
         private System.Windows.Forms.TextBox textBoxVolumeTotal;
-        private System.Windows.Forms.Button buttonCalculateChlorine;
+        private System.Windows.Forms.Button buttonCalculateChlorineCost;
         private System.Windows.Forms.Button buttonClearAllFields;
         private System.Windows.Forms.Button buttonCloseApp;
     }
