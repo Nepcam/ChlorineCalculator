@@ -157,13 +157,14 @@
             this.labelCosts.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCosts.Location = new System.Drawing.Point(466, 175);
             this.labelCosts.Name = "labelCosts";
-            this.labelCosts.Size = new System.Drawing.Size(68, 20);
+            this.labelCosts.Size = new System.Drawing.Size(128, 20);
             this.labelCosts.TabIndex = 11;
-            this.labelCosts.Text = "COSTS";
+            this.labelCosts.Text = "TOTAL COSTS";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(581, 102);
+            this.textBox3.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.textBox3.Location = new System.Drawing.Point(636, 102);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(100, 20);
@@ -171,7 +172,8 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(581, 138);
+            this.textBox4.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.textBox4.Location = new System.Drawing.Point(636, 138);
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(100, 20);
@@ -179,7 +181,8 @@
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(581, 175);
+            this.textBox5.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.textBox5.Location = new System.Drawing.Point(636, 175);
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(100, 20);
@@ -240,7 +243,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 336);
             this.Controls.Add(this.buttonCloseApp);
             this.Controls.Add(this.buttonClearAllFields);
