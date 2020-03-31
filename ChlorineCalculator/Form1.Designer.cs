@@ -229,6 +229,7 @@
             this.buttonClearAllFields.TabIndex = 18;
             this.buttonClearAllFields.Text = "CLEAR ";
             this.buttonClearAllFields.UseVisualStyleBackColor = false;
+            this.buttonClearAllFields.Click += new System.EventHandler(this.buttonClearAllFields_Click);
             // 
             // buttonCloseApp
             // 
@@ -240,6 +241,7 @@
             this.buttonCloseApp.TabIndex = 19;
             this.buttonCloseApp.Text = "EXIT";
             this.buttonCloseApp.UseVisualStyleBackColor = false;
+            this.buttonCloseApp.Click += new System.EventHandler(this.buttonCloseApp_Click);
             // 
             // FormChlorineCalculator
             // 

@@ -1,11 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+//using System.Collections.Generic;
+//using System.ComponentModel;
+//using System.Data;
+//using System.Drawing;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ChlorineCalculator
@@ -53,8 +53,8 @@ namespace ChlorineCalculator
 
                 //CALCULATE the bags of chlorine required, rounded up ( = chlorine amount / bag weight)
                 double bagsOfChlorine = 0;
-                bagsOfChlorine = chlorineRequired / BAG_WEIGHT;
-                Console.WriteLine(Math.Ceiling(bagsOfChlorine));
+                bagsOfChlorine = (double)Math.Ceiling(chlorineRequired) / BAG_WEIGHT;
+                Console.WriteLine(bagsOfChlorine);
 
                 //CALCULATE the total cost of the chlorine ( = number of bags * bag cost)
                 decimal totalCost = 0;
@@ -79,8 +79,25 @@ namespace ChlorineCalculator
                 textBoxLength.Clear();
                 textBoxDepth.Clear();
                 //Set focus to the first input textbox
-
+                textBoxWidth.Focus();
             }
         }//End of Calculate Chlorine button
+
+        private void buttonClearAllFields_Click(object sender, EventArgs e)
+        {
+            //Clear all textboxes
+            textBoxWidth.Clear();
+            textBoxLength.Clear();
+            textBoxDepth.Clear();
+            textBoxVolumeTotal.Clear();
+            textBoxKGS.Clear();
+            textBoxBags.Clear();
+            textBoxTotalCosts.Clear();
+        }
+
+        private void buttonCloseApp_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
