@@ -137,9 +137,9 @@
             this.labelKgsNeeded.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelKgsNeeded.Location = new System.Drawing.Point(466, 100);
             this.labelKgsNeeded.Name = "labelKgsNeeded";
-            this.labelKgsNeeded.Size = new System.Drawing.Size(43, 20);
+            this.labelKgsNeeded.Size = new System.Drawing.Size(62, 20);
             this.labelKgsNeeded.TabIndex = 9;
-            this.labelKgsNeeded.Text = "KGs";
+            this.labelKgsNeeded.Text = "in KGs";
             // 
             // labelNumberOfBags
             // 
@@ -147,9 +147,9 @@
             this.labelNumberOfBags.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNumberOfBags.Location = new System.Drawing.Point(466, 138);
             this.labelNumberOfBags.Name = "labelNumberOfBags";
-            this.labelNumberOfBags.Size = new System.Drawing.Size(59, 20);
+            this.labelNumberOfBags.Size = new System.Drawing.Size(78, 20);
             this.labelNumberOfBags.TabIndex = 10;
-            this.labelNumberOfBags.Text = "BAGS";
+            this.labelNumberOfBags.Text = "in BAGS";
             // 
             // labelCosts
             // 
@@ -245,7 +245,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(826, 652);
+            this.ClientSize = new System.Drawing.Size(826, 433);
             this.Controls.Add(this.buttonCloseApp);
             this.Controls.Add(this.buttonClearAllFields);
             this.Controls.Add(this.buttonCalculateChlorineCost);
