@@ -1,6 +1,6 @@
 ﻿namespace ChlorineCalculator
 {
-    partial class Form1
+    partial class FormChlorineCalculator
     {
         /// <summary>
         /// Required designer variable.
@@ -32,11 +32,11 @@
             this.labelChlorineNeeded = new System.Windows.Forms.Label();
             this.labelAppTitle = new System.Windows.Forms.Label();
             this.labelLength = new System.Windows.Forms.Label();
-            this.textBoxLengthOfPool = new System.Windows.Forms.TextBox();
+            this.textBoxLength = new System.Windows.Forms.TextBox();
             this.labelWidthOfPool = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxWidth = new System.Windows.Forms.TextBox();
             this.labelDepthOfPool = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxDepth = new System.Windows.Forms.TextBox();
             this.labelKgsNeeded = new System.Windows.Forms.Label();
             this.labelNumberOfBags = new System.Windows.Forms.Label();
             this.labelCosts = new System.Windows.Forms.Label();
@@ -90,12 +90,12 @@
             this.labelLength.TabIndex = 3;
             this.labelLength.Text = "LENGTH OF POOL";
             // 
-            // textBoxLengthOfPool
+            // textBoxLength
             // 
-            this.textBoxLengthOfPool.Location = new System.Drawing.Point(235, 100);
-            this.textBoxLengthOfPool.Name = "textBoxLengthOfPool";
-            this.textBoxLengthOfPool.Size = new System.Drawing.Size(100, 20);
-            this.textBoxLengthOfPool.TabIndex = 4;
+            this.textBoxLength.Location = new System.Drawing.Point(235, 100);
+            this.textBoxLength.Name = "textBoxLength";
+            this.textBoxLength.Size = new System.Drawing.Size(100, 20);
+            this.textBoxLength.TabIndex = 4;
             // 
             // labelWidthOfPool
             // 
@@ -107,12 +107,12 @@
             this.labelWidthOfPool.TabIndex = 5;
             this.labelWidthOfPool.Text = "WIDTH OF POOL";
             // 
-            // textBox1
+            // textBoxWidth
             // 
-            this.textBox1.Location = new System.Drawing.Point(235, 138);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 6;
+            this.textBoxWidth.Location = new System.Drawing.Point(235, 138);
+            this.textBoxWidth.Name = "textBoxWidth";
+            this.textBoxWidth.Size = new System.Drawing.Size(100, 20);
+            this.textBoxWidth.TabIndex = 6;
             // 
             // labelDepthOfPool
             // 
@@ -124,12 +124,12 @@
             this.labelDepthOfPool.TabIndex = 7;
             this.labelDepthOfPool.Text = "DEPTH OF POOL";
             // 
-            // textBox2
+            // textBoxDepth
             // 
-            this.textBox2.Location = new System.Drawing.Point(235, 175);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 8;
+            this.textBoxDepth.Location = new System.Drawing.Point(235, 175);
+            this.textBoxDepth.Name = "textBoxDepth";
+            this.textBoxDepth.Size = new System.Drawing.Size(100, 20);
+            this.textBoxDepth.TabIndex = 8;
             // 
             // labelKgsNeeded
             // 
@@ -216,6 +216,7 @@
             this.buttonCalculateChlorineCost.TabIndex = 17;
             this.buttonCalculateChlorineCost.Text = "CHLORINE COSTS";
             this.buttonCalculateChlorineCost.UseVisualStyleBackColor = false;
+            this.buttonCalculateChlorineCost.Click += new System.EventHandler(this.buttonCalculateChlorineCost_Click);
             // 
             // buttonClearAllFields
             // 
@@ -239,7 +240,7 @@
             this.buttonCloseApp.Text = "EXIT";
             this.buttonCloseApp.UseVisualStyleBackColor = false;
             // 
-            // Form1
+            // FormChlorineCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -256,16 +257,16 @@
             this.Controls.Add(this.labelCosts);
             this.Controls.Add(this.labelNumberOfBags);
             this.Controls.Add(this.labelKgsNeeded);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBoxDepth);
             this.Controls.Add(this.labelDepthOfPool);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxWidth);
             this.Controls.Add(this.labelWidthOfPool);
-            this.Controls.Add(this.textBoxLengthOfPool);
+            this.Controls.Add(this.textBoxLength);
             this.Controls.Add(this.labelLength);
             this.Controls.Add(this.labelAppTitle);
             this.Controls.Add(this.labelChlorineNeeded);
             this.Controls.Add(this.labelVolumeOfWater);
-            this.Name = "Form1";
+            this.Name = "FormChlorineCalculator";
             this.Text = "CHLORINE CALCULATOR";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -278,11 +279,11 @@
         private System.Windows.Forms.Label labelChlorineNeeded;
         private System.Windows.Forms.Label labelAppTitle;
         private System.Windows.Forms.Label labelLength;
-        private System.Windows.Forms.TextBox textBoxLengthOfPool;
+        private System.Windows.Forms.TextBox textBoxLength;
         private System.Windows.Forms.Label labelWidthOfPool;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxWidth;
         private System.Windows.Forms.Label labelDepthOfPool;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBoxDepth;
         private System.Windows.Forms.Label labelKgsNeeded;
         private System.Windows.Forms.Label labelNumberOfBags;
         private System.Windows.Forms.Label labelCosts;
