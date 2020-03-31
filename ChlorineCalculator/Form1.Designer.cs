@@ -40,9 +40,9 @@
             this.labelKgsNeeded = new System.Windows.Forms.Label();
             this.labelNumberOfBags = new System.Windows.Forms.Label();
             this.labelCosts = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBoxKGS = new System.Windows.Forms.TextBox();
+            this.textBoxBags = new System.Windows.Forms.TextBox();
+            this.textBoxTotalCosts = new System.Windows.Forms.TextBox();
             this.label1VolumeTotal = new System.Windows.Forms.Label();
             this.textBoxVolumeTotal = new System.Windows.Forms.TextBox();
             this.buttonCalculateChlorineCost = new System.Windows.Forms.Button();
@@ -161,48 +161,49 @@
             this.labelCosts.TabIndex = 11;
             this.labelCosts.Text = "TOTAL COSTS";
             // 
-            // textBox3
+            // textBoxKGS
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.textBox3.Location = new System.Drawing.Point(636, 102);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 12;
+            this.textBoxKGS.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.textBoxKGS.Location = new System.Drawing.Point(636, 102);
+            this.textBoxKGS.Name = "textBoxKGS";
+            this.textBoxKGS.ReadOnly = true;
+            this.textBoxKGS.Size = new System.Drawing.Size(100, 20);
+            this.textBoxKGS.TabIndex = 12;
             // 
-            // textBox4
+            // textBoxBags
             // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.textBox4.Location = new System.Drawing.Point(636, 138);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 13;
+            this.textBoxBags.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.textBoxBags.Location = new System.Drawing.Point(636, 138);
+            this.textBoxBags.Name = "textBoxBags";
+            this.textBoxBags.ReadOnly = true;
+            this.textBoxBags.Size = new System.Drawing.Size(100, 20);
+            this.textBoxBags.TabIndex = 13;
             // 
-            // textBox5
+            // textBoxTotalCosts
             // 
-            this.textBox5.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.textBox5.Location = new System.Drawing.Point(636, 175);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 14;
+            this.textBoxTotalCosts.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.textBoxTotalCosts.Location = new System.Drawing.Point(636, 175);
+            this.textBoxTotalCosts.Name = "textBoxTotalCosts";
+            this.textBoxTotalCosts.ReadOnly = true;
+            this.textBoxTotalCosts.Size = new System.Drawing.Size(100, 20);
+            this.textBoxTotalCosts.TabIndex = 14;
             // 
             // label1VolumeTotal
             // 
             this.label1VolumeTotal.AutoSize = true;
-            this.label1VolumeTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1VolumeTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1VolumeTotal.Location = new System.Drawing.Point(31, 222);
             this.label1VolumeTotal.Name = "label1VolumeTotal";
-            this.label1VolumeTotal.Size = new System.Drawing.Size(83, 24);
+            this.label1VolumeTotal.Size = new System.Drawing.Size(143, 20);
             this.label1VolumeTotal.TabIndex = 15;
-            this.label1VolumeTotal.Text = "TOTAL ";
+            this.label1VolumeTotal.Text = "VOLUME TOTAL";
             // 
             // textBoxVolumeTotal
             // 
-            this.textBoxVolumeTotal.BackColor = System.Drawing.SystemColors.Control;
+            this.textBoxVolumeTotal.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.textBoxVolumeTotal.Location = new System.Drawing.Point(235, 226);
             this.textBoxVolumeTotal.Name = "textBoxVolumeTotal";
+            this.textBoxVolumeTotal.ReadOnly = true;
             this.textBoxVolumeTotal.Size = new System.Drawing.Size(100, 20);
             this.textBoxVolumeTotal.TabIndex = 16;
             // 
@@ -251,9 +252,9 @@
             this.Controls.Add(this.buttonCalculateChlorineCost);
             this.Controls.Add(this.textBoxVolumeTotal);
             this.Controls.Add(this.label1VolumeTotal);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBoxTotalCosts);
+            this.Controls.Add(this.textBoxBags);
+            this.Controls.Add(this.textBoxKGS);
             this.Controls.Add(this.labelCosts);
             this.Controls.Add(this.labelNumberOfBags);
             this.Controls.Add(this.labelKgsNeeded);
@@ -287,9 +288,9 @@
         private System.Windows.Forms.Label labelKgsNeeded;
         private System.Windows.Forms.Label labelNumberOfBags;
         private System.Windows.Forms.Label labelCosts;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBoxKGS;
+        private System.Windows.Forms.TextBox textBoxBags;
+        private System.Windows.Forms.TextBox textBoxTotalCosts;
         private System.Windows.Forms.Label label1VolumeTotal;
         private System.Windows.Forms.TextBox textBoxVolumeTotal;
         private System.Windows.Forms.Button buttonCalculateChlorineCost;

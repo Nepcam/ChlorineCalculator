@@ -16,7 +16,7 @@ namespace ChlorineCalculator
         {
             InitializeComponent();
         }
-
+        //const = READ ONLY Variables
         //Amount of chlorine per cubic metre of water
         const double CHLORINE_RATE = 0.1;
         //Amount of chlorine in one bag in kg's
@@ -62,15 +62,24 @@ namespace ChlorineCalculator
                 Console.WriteLine(totalCost);
 
                 //DISPLAY the volume of water(to 3dp)
+                textBoxVolumeTotal.Text = totalCost.ToString("N3");
                 //DISPLAY the number of kg of chlorine required(to 3dp)
+                textBoxKGS.Text = chlorineRequired.ToString("N3");
                 //DISPLAY the number of bags of chlorine required
+                textBoxBags.Text = Math.Ceiling(bagsOfChlorine).ToString();
                 //DISPLAY the cost of the bags formatted as currency
+                textBoxTotalCosts.Text = totalCost.ToString("c");
             }
             catch
             {
                 //Display error message
+                MessageBox.Show("Error");
                 //Clear all textboxes
+                textBoxWidth.Clear();
+                textBoxLength.Clear();
+                textBoxDepth.Clear();
                 //Set focus to the first input textbox
+
             }
         }//End of Calculate Chlorine button
     }
