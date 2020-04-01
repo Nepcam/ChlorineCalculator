@@ -86,9 +86,12 @@ namespace ChlorineCalculator
         private void buttonClearAllFields_Click(object sender, EventArgs e)
         {
             //Clear all textboxes
+            //Input text boxes
             textBoxWidth.Clear();
             textBoxLength.Clear();
             textBoxDepth.Clear();
+
+            //Read only text boxes
             textBoxVolumeTotal.Clear();
             textBoxKGS.Clear();
             textBoxBags.Clear();
