@@ -44,22 +44,22 @@ namespace ChlorineCalculator
                 //CALCULATE the volume of water in the swimming pool ( = length * width * depth)
                 double waterVolume = 0;
                 waterVolume = poolLength * poolWidth * poolDepth;
-                Console.WriteLine(waterVolume);
+                //Console.WriteLine(waterVolume);
 
                 //CALCULATE the amount of chlorine required ( = water volume * chlorine required per cubic metre
                 double chlorineRequired = 0;
                 chlorineRequired = waterVolume * CHLORINE_RATE;
-                Console.WriteLine(chlorineRequired);
+                //Console.WriteLine(chlorineRequired);
 
                 //CALCULATE the bags of chlorine required, rounded up ( = chlorine amount / bag weight)
-                double bagsOfChlorine = 0;
+                int bagsOfChlorine = 0;
                 bagsOfChlorine = (int)Math.Ceiling(chlorineRequired) / BAG_WEIGHT;
                 Console.WriteLine(bagsOfChlorine);
 
                 //CALCULATE the total cost of the chlorine ( = number of bags * bag cost)
                 decimal totalCost = 0;
-                totalCost = (decimal)bagsOfChlorine * BAG_COST;
-                Console.WriteLine(totalCost);
+                totalCost = bagsOfChlorine * BAG_COST;
+                //Console.WriteLine(totalCost);
 
                 //DISPLAY the volume of water(to 3dp)
                 textBoxVolumeTotal.Text = totalCost.ToString("N3");
