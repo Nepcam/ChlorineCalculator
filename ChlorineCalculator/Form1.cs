@@ -53,7 +53,7 @@ namespace ChlorineCalculator
 
                 //CALCULATE the bags of chlorine required, rounded up ( = chlorine amount / bag weight)
                 double bagsOfChlorine = 0;
-                bagsOfChlorine = (double)Math.Ceiling(chlorineRequired) / BAG_WEIGHT;
+                bagsOfChlorine = (int)Math.Ceiling(chlorineRequired) / BAG_WEIGHT;
                 Console.WriteLine(bagsOfChlorine);
 
                 //CALCULATE the total cost of the chlorine ( = number of bags * bag cost)
@@ -66,7 +66,7 @@ namespace ChlorineCalculator
                 //DISPLAY the number of kg of chlorine required(to 3dp)
                 textBoxKGS.Text = chlorineRequired.ToString("N3");
                 //DISPLAY the number of bags of chlorine required
-                textBoxBags.Text = Math.Ceiling(bagsOfChlorine).ToString();
+                textBoxBags.Text = bagsOfChlorine.ToString();
                 //DISPLAY the cost of the bags formatted as currency
                 textBoxTotalCosts.Text = totalCost.ToString("c");
             }
